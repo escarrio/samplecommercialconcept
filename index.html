@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>I-recharge ang Moment Mo — Sting (Sample Commercial Concept)</title>
+<title>Gising ang Energy, Gising ang Moment! — Sting (Sample Commercial Concept)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
@@ -33,7 +33,7 @@ p.cap{font-size:clamp(1rem,2vw,1.35rem);max-width:34ch;line-height:1.45}
 .dots a.cur{background:var(--red);border-color:var(--red);opacity:1;transform:scale(1.4)}
 :focus-visible{outline:3px solid var(--glow);outline-offset:3px}
 
-/* 1 — ATTENTION: brownout, then red flash */
+/* 1 — ATTENTION */
 #s1{background:#000;text-align:center}
 #s1 .flash{position:absolute;inset:0;background:var(--red);opacity:0}
 #s1.on .flash{animation:flash 2.4s .9s both}
@@ -41,7 +41,7 @@ p.cap{font-size:clamp(1rem,2vw,1.35rem);max-width:34ch;line-height:1.45}
 #s1 .brown{position:absolute;top:36%;left:0;right:0;font-family:var(--display);font-weight:800;font-size:clamp(1rem,3vw,1.8rem);letter-spacing:.3em;color:#444;text-transform:uppercase}
 #s1.on .brown{animation:gone .2s .85s both}
 @keyframes gone{to{opacity:0}}
-#s1 h1{font-size:clamp(3.6rem,15vw,13rem);opacity:0;position:relative;text-shadow:0 0 40px var(--red)}
+#s1 h1{font-size:clamp(3.6rem,17vw,14rem);opacity:0;position:relative;text-shadow:0 0 40px var(--red)}
 #s1.on h1{animation:slam .6s 1.15s cubic-bezier(.2,.9,.2,1) both}
 @keyframes slam{from{opacity:0;transform:scale(1.35)}to{opacity:1;transform:none}}
 #s1 .hint{position:absolute;bottom:6vh;left:0;right:0;text-align:center;opacity:0;font-size:.9rem}
@@ -71,7 +71,7 @@ p.cap{font-size:clamp(1rem,2vw,1.35rem);max-width:34ch;line-height:1.45}
 #s2.on .blades{animation:spin .5s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 
-/* 3 — DESIRE: lights up with parols */
+/* 3 — DESIRE */
 #s3{background:#07090c}
 .burst{position:absolute;left:50%;top:50%;width:20px;height:20px;border-radius:50%;transform:translate(-50%,-50%) scale(0);
   background:radial-gradient(circle,#fff 0%,var(--glow) 18%,#ff7a59 40%,var(--red) 62%,#7a0018 100%)}
@@ -106,7 +106,7 @@ p.cap{font-size:clamp(1rem,2vw,1.35rem);max-width:34ch;line-height:1.45}
 #s3.on .parol polygon{fill:var(--ph-yellow);filter:drop-shadow(0 0 14px #ffd98a) drop-shadow(0 0 40px #ff9a3c)}
 #s3.on .parol{animation:sway 4s 3s ease-in-out infinite}
 @keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
-.flags{position:absolute;top:0;left:0;right:0;height:46px;z-index:2;display:flex;justify-content:space-around;opacity:.0;transition:opacity 1s 3s}
+.flags{position:absolute;top:0;left:0;right:0;height:46px;z-index:2;display:flex;justify-content:space-around;opacity:0;transition:opacity 1s 3s}
 #s3.on .flags{opacity:1}
 .flags i{width:0;height:0;border-left:16px solid transparent;border-right:16px solid transparent;border-top:34px solid var(--ph-blue)}
 .flags i:nth-child(3n+2){border-top-color:var(--ph-yellow)}
@@ -115,8 +115,8 @@ p.cap{font-size:clamp(1rem,2vw,1.35rem);max-width:34ch;line-height:1.45}
 /* 4 — ACTION */
 #s4{background:var(--red);text-align:center}
 #s4::after{content:"";position:absolute;left:0;right:0;bottom:0;height:8px;background:linear-gradient(90deg,var(--ph-blue) 33%,var(--ph-yellow) 33% 66%,#fff 66%)}
-.s4wrap{display:grid;justify-items:center;gap:1.6rem}
-#s4 h2{font-size:clamp(2.8rem,10vw,9rem);color:#fff}
+.s4wrap{display:grid;justify-items:center;gap:1.4rem}
+#s4 h2{font-size:clamp(2.6rem,9vw,8rem);color:#fff}
 #s4 h2 span{display:block;color:var(--void)}
 #s4 .can{width:clamp(120px,16vw,190px);position:absolute;right:8vw;bottom:-4vh;transform:rotate(14deg)}
 .cta{font:900 clamp(1.3rem,3vw,2rem) var(--display);letter-spacing:.06em;text-transform:uppercase;background:var(--void);color:#fff;border:0;border-radius:6px;padding:.7em 1.6em;cursor:pointer;transition:transform .2s,background .2s}
@@ -124,6 +124,7 @@ p.cap{font-size:clamp(1rem,2vw,1.35rem);max-width:34ch;line-height:1.45}
 #s4.on h2{animation:slam .7s both}
 .tag{font-family:var(--display);font-weight:800;font-size:1.4rem;letter-spacing:.08em;text-transform:uppercase}
 .note{font-size:.85rem;opacity:.9}
+.moderate{font-size:.9rem;font-weight:500;opacity:.95}
 
 @media(max-width:760px){.s2wrap{grid-template-columns:1fr}#s2 svg{max-height:38vh}.dots{display:none}#s4 .can{display:none}.logo small{display:none}}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-delay:0s!important}html{scroll-behavior:auto}}
@@ -159,12 +160,12 @@ p.cap{font-size:clamp(1rem,2vw,1.35rem);max-width:34ch;line-height:1.45}
 </nav>
 
 <!-- 1 ATENSYON -->
-<section class="scene" id="s1" aria-label="Atensyon: madilim na kwarto, pulang flash">
+<section class="scene" id="s1" aria-label="Atensyon: madilim na kwarto, pulang flash, Gising ang Energy">
   <p class="brown">Madilim na Kwarto</p>
   <div class="flash"></div>
-  <h1>I-recharge<br>ang moment mo</h1>
+  <h1>Gising ang<br>Energy!</h1>
   <p class="hint">Mag-scroll o pindutin ang play</p>
-  <span class="stage-tag">Eksena 1 · Atensyon(Attention)</span>
+  <span class="stage-tag">Eksena 1 · Atensyon (Attention)</span>
 </section>
 
 <!-- 2 INTERES -->
@@ -180,15 +181,13 @@ p.cap{font-size:clamp(1rem,2vw,1.35rem);max-width:34ch;line-height:1.45}
       <defs><radialGradient id="cone" cx=".5" cy="0" r="1"><stop offset="0" stop-color="#ffd98a" stop-opacity=".55"/><stop offset="1" stop-color="#ffd98a" stop-opacity="0"/></radialGradient></defs>
       <polygon class="lamp" points="300,60 180,330 380,330" fill="url(#cone)"/>
       <path d="M300 60 L340 20 L360 38 L318 78Z" fill="#2c3b4a"/><line x1="318" y1="70" x2="330" y2="250" stroke="#2c3b4a" stroke-width="6"/>
-      <!-- electric fan -->
       <rect x="66" y="215" width="8" height="75" fill="#2c3b4a"/><rect x="45" y="284" width="50" height="8" rx="3" fill="#2c3b4a"/>
       <g class="blades"><ellipse cx="70" cy="165" rx="9" ry="26" fill="#6f8aa3"/><ellipse cx="70" cy="215" rx="9" ry="26" fill="#6f8aa3"/><ellipse cx="45" cy="190" rx="26" ry="9" fill="#6f8aa3"/><ellipse cx="95" cy="190" rx="26" ry="9" fill="#6f8aa3"/></g>
       <circle cx="70" cy="190" r="7" fill="#1a2733"/>
       <rect x="20" y="290" width="360" height="12" rx="3" fill="#1a2733"/><rect x="40" y="302" width="10" height="58" fill="#14202b"/><rect x="350" y="302" width="10" height="58" fill="#14202b"/>
-      <rect x="215" y="272" width="120" height="18" fill="var(--paper)" transform="rotate(-3 275 280)"/>
+      <rect x="215" y="272" width="120" height="18" fill="#e6e1d3" transform="rotate(-3 275 280)"/>
       <rect x="225" y="262" width="95" height="10" fill="#cfc9b8" transform="rotate(2 270 267)"/>
       <path d="M120 290 Q125 210 200 215 Q275 210 280 290Z" fill="#3a5068"/>
-      <!-- school ID with lace -->
       <path d="M185 218 L200 262 L215 218" stroke="#0038a8" stroke-width="4" fill="none"/>
       <rect x="190" y="258" width="20" height="26" rx="2" fill="#f2f2f2"/><rect x="193" y="262" width="14" height="10" fill="#0038a8"/>
       <g class="head">
@@ -201,11 +200,11 @@ p.cap{font-size:clamp(1rem,2vw,1.35rem);max-width:34ch;line-height:1.45}
       <g fill="#fff" opacity=".7" font-family="Big Shoulders Display,Impact,sans-serif" font-weight="900" font-size="20"><text x="262" y="110">z</text><text x="280" y="90" font-size="26">z</text></g>
     </svg>
   </div>
-  <span class="stage-tag">Eksena 2 · Interes(Interest)</span>
+  <span class="stage-tag">Eksena 2 · Interes (Interest)</span>
 </section>
 
 <!-- 3 PAGNANAIS -->
-<section class="scene" id="s3" aria-label="Pagnanais: nagbubukas ang malamig na Sting at lumiliwanag ang mundo">
+<section class="scene" id="s3" aria-label="Pagnanais: binuksan ang malamig na Sting at lumiwanag ang paligid">
   <div class="burst"></div>
   <div class="flags" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   <svg class="parol l" viewBox="0 0 100 120" aria-hidden="true"><use href="#parol"/></svg>
@@ -219,21 +218,22 @@ p.cap{font-size:clamp(1rem,2vw,1.35rem);max-width:34ch;line-height:1.45}
       <g class="tab"><ellipse cx="68" cy="14" rx="14" ry="5" fill="none" stroke="#f1f3f6" stroke-width="3"/></g>
     </svg>
     <h2>Binuksan ang malamig na Sting,<br>at lumiwanag ang buong paligid.</h2>
-    <div class="battery" aria-label="Nagcha-charge hanggang 100 porsyento"><i><b></b></i> Fully charged!</div>
+    <div class="battery" aria-label="Gising na ang energy, 100 porsyento"><i><b></b></i> Gising na ang energy!</div>
   </div>
-  <span class="stage-tag" style="color:#fff">Eksena 3 · Pagnanais(Desire)</span>
+  <span class="stage-tag" style="color:#fff">Eksena 3 · Pagnanais (Desire)</span>
 </section>
 
 <!-- 4 AKSYON -->
-<section class="scene" id="s4" aria-label="Aksyon: Kumuha ng Sting">
+<section class="scene" id="s4" aria-label="Aksyon: Gising ang Energy, Gising ang Moment! Kumuha ng Sting.">
   <div class="s4wrap">
-    <h2>I-recharge ang moment mo.<span>Kumuha ng Sting.</span></h2>
-    <p class="tag">Kaya mo 'yan!</p>
+    <h2>Gising ang Energy,<span>Gising ang Moment!</span></h2>
+    <p class="tag">Gising ang Energy, Gising ang Moment! Kumuha ng Sting!</p>
     <button class="cta" id="cta">Kumuha ng Sting</button>
     <p class="note" id="note" role="status">&nbsp;</p>
+    <p class="moderate">Uminom nang katamtaman.</p>
   </div>
   <svg class="can" viewBox="0 0 120 240" aria-hidden="true"><use href="#can"/></svg>
-  <span class="stage-tag" style="color:#fff">Eksena 4 · Aksyon(Action)</span>
+  <span class="stage-tag" style="color:#fff">Eksena 4 · Aksyon (Action)</span>
 </section>
 
 <script>
@@ -262,8 +262,7 @@ play.addEventListener('click',()=>{
 ['wheel','touchstart','keydown'].forEach(ev=>addEventListener(ev,()=>{timers.forEach(clearTimeout);timers=[]},{passive:true}));
 
 document.getElementById('cta').addEventListener('click',()=>{
-  document.getElementById('note').textContent='Hanapin ang pulang lata sa pinakamalapit na tindahan.';
-  // window.open('https://your-link-here.com','_blank');
+  document.getElementById('note').textContent='Hanapin ang pulang Sting sa pinakamalapit na tindahan.';
 });
 
 scenes[0].classList.add('on');dots[0].classList.add('cur');
